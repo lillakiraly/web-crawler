@@ -7,12 +7,24 @@ Current TechStack: Java, Spring Boot, Jsoup
 
 ## How to use it
 #### Providing the URL(as a crawling start point) and depth (how far should the crawler go)
-Send a GET request, with a JSON body, that has the following keys:
+Send a GET request, with the following keys:
+- **url**
+- **depth**
+
+*With JSON*:
 ```json
 {
   "url": "https://example.com/",
   "depth": 1
 }
+```
+
+*With XML*:
+```xml
+<data>
+  <url>https://example.com/</url>
+  <depth>1</depth>
+</data>
 ```
 
 
