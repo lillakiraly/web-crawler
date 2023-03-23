@@ -1,4 +1,4 @@
-package com.webcrawler;
+package com.webcrawler.service;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -8,10 +8,11 @@ import org.jsoup.select.Elements;
 import java.io.IOException;
 import java.util.Set;
 
-public class WebCrawler {
+public class CrawlerService {
+
     private Set<String> visitedLinks;
 
-    public WebCrawler(Set<String> visitedLinks) {
+    public CrawlerService(Set<String> visitedLinks) {
         this.visitedLinks = visitedLinks;
     }
 
