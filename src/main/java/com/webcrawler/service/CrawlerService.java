@@ -11,7 +11,7 @@ import java.util.Set;
 
 @Service
 public class CrawlerService {
-    private static final int DEFAULT_DEPTH = 0;
+    private static final int DEFAULT_DEPTH = 1;
 
     private Set<String> visitedLinks;
 
