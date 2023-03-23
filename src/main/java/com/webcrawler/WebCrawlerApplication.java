@@ -1,7 +1,5 @@
 package com.webcrawler;
 
-
-
 import java.util.HashSet;
 
 public class WebCrawlerApplication {
@@ -10,5 +8,4 @@ public class WebCrawlerApplication {
 
         webCrawler.crawlPage("https://example.com/", 1);
     }
-
 }

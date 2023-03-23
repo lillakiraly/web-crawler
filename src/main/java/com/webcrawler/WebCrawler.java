@@ -31,12 +31,11 @@ public class WebCrawler {
                 Elements linksOnDocument = document.select("a[href]");
                 for (Element element : linksOnDocument) {
                     String link = element.attr("abs:href");
-                        crawlPage(link, depth - 1);
+                    crawlPage(link, depth - 1);
                 }
             } catch (IOException ioException) {
                 System.out.println(ioException);
             }
         }
     }
-
 }
