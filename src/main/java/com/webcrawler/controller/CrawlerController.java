@@ -8,16 +8,16 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Set;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("/api/")
 public class CrawlerController {
-    private CrawlerService crawlerService;
+    private final CrawlerService crawlerService;
 
     @Autowired
     public CrawlerController(CrawlerService crawlerService) {
         this.crawlerService = crawlerService;
     }
 
-    @GetMapping
+    @GetMapping("links")
     public Set<String> getCrawlResults(@RequestBody CrawlerRequestDto req) {
         Set<String> collectedUrls = crawlerService.crawl(req);
         return collectedUrls;
