@@ -98,9 +98,11 @@ With default depth:
 - [ ] Create persistance layer to save crawl results
 - [ ] Implement Bearer token authentication and authorization
 
-Limitations:
-- href="javascript:{some js code}" problems
-- 403 http status code problems
+## Limitations
+
+The application can only crawl links, that doesn't require special access (such as login).
+
+The application cannot crawl links, where javascript code is provided to the `href` attribute.
 
 ## Acknowledgements
 - Badges: https://github.com/Ileriayo/markdown-badges
