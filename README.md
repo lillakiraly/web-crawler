@@ -44,18 +44,18 @@ java -jar webcrawler-0.0.1-SNAPSHOT.jar
 The project will be hosted on http://localhost:8080/ .
 
 ## Usage
-- **Get/crawl all links on a given URL, with the provided depth**
+1. **Get/crawl all links on a given URL, with the provided depth**
 
 Send a GET request to the `/api/links` endpoint.
 
 The request body should include the following information:
 
 - **url** (required): the starting point of the crawl.
-- **depth** (optional): *default depth is 1*
+- **depth** (optional): *default depth is 1*.
 
-*JSON*:
+***JSON***:
 
-With provided depth
+With provided depth:
 ```json
 {
   "url": "https://example.com/",
@@ -63,7 +63,7 @@ With provided depth
 }
 ```
 
-With default depth
+With default depth:
 
 ```json
 {
@@ -71,9 +71,9 @@ With default depth
 }
 ```
 
-*XML*:
+***XML***:
 
-With provided depth
+With provided depth:
 ```xml
 <data>
   <url>https://example.com/</url>
@@ -81,7 +81,7 @@ With provided depth
 </data>
 ```
 
-With default depth
+With default depth:
 ```xml
 <data>
   <url>https://example.com/</url>
