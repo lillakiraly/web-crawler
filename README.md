@@ -44,29 +44,53 @@ java -jar webcrawler-0.0.1-SNAPSHOT.jar
 The project will be hosted on http://localhost:8080/ .
 
 ## Usage
-#### Providing the URL(as a crawling start point) and depth (how far should the crawler go)
-Send a GET request, with the following keys:
-- **url**
-- **depth**
+- **Get/crawl all links on a given URL, with the provided depth**
 
-*With JSON*:
+Send a GET request to the `/api/links` endpoint.
+
+The request body should include the following information:
+
+- **url** (required): the starting point of the crawl.
+- **depth** (optional): *default depth is 1*
+
+*JSON*:
+
+With provided depth
 ```json
 {
   "url": "https://example.com/",
-  "depth": 1
+  "depth": 2
 }
 ```
 
-*With XML*:
+With default depth
+
+```json
+{
+  "url": "https://example.com/"
+}
+```
+
+*XML*:
+
+With provided depth
 ```xml
 <data>
   <url>https://example.com/</url>
-  <depth>1</depth>
+  <depth>2</depth>
+</data>
+```
+
+With default depth
+```xml
+<data>
+  <url>https://example.com/</url>
+  <depth>2</depth>
 </data>
 ```
 
 
-current/implemented features
+current/implemented features - roadmap
 
 planned features
 
