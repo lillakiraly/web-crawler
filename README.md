@@ -19,6 +19,19 @@ The crawler algorithm uses DFS (depth first search).
 ### Prerequisites
 - Java 11
 - Maven 3.6
+
+### Setup
+1. Clone repo
+```git clone https://github.com/lillakiraly/web-crawler.git```
+
+2. Navigate to the root directory (where the pom.xml file is) 
+
+3. Compile and package the project.
+```mvn package```
+
+4. Run the project
+```java -jar webcrawler-0.0.1-SNAPSHOT.jar```
+
 ## How to use it
 #### Providing the URL(as a crawling start point) and depth (how far should the crawler go)
 Send a GET request, with the following keys:
