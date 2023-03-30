@@ -44,3 +44,6 @@ planned features
 Limitations:
 - href="javascript:{some js code}" problems
 - 403 http status code problems
+
+## Acknowledgements
+- Badges: https://github.com/Ileriayo/markdown-badges
