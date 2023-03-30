@@ -15,6 +15,10 @@ The crawler algorithm uses DFS (depth first search).
 - Lombok
 - ![Apache Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white)
 
+## Getting Started
+### Prerequisites
+- Java 11
+- Maven 3.6
 ## How to use it
 #### Providing the URL(as a crawling start point) and depth (how far should the crawler go)
 Send a GET request, with the following keys:
@@ -48,3 +52,7 @@ Limitations:
 
 ## Acknowledgements
 - Badges: https://github.com/Ileriayo/markdown-badges
+
+## Helpful links
+- Java (download, installation): https://www.oracle.com/java/technologies/downloads/
+- Maven (download, installation): https://maven.apache.org/download.cgi
