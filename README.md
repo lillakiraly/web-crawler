@@ -85,14 +85,18 @@ With default depth:
 ```xml
 <data>
   <url>https://example.com/</url>
-  <depth>2</depth>
 </data>
 ```
 
-
-current/implemented features - roadmap
-
-planned features
+## Roadmap
+- [x] Implement basic crawling logic
+- [x] Add Spring Boot base
+- [ ] Create API endpoints
+  - [x] Endpoint to generate new crawl results
+  - [ ] Endpoint to retrieve previous crawl results from db
+  - [ ] Endpoint to remove previous crawl results from db
+- [ ] Create persistance layer to save crawl results
+- [ ] Implement Bearer token authentication and authorization
 
 Limitations:
 - href="javascript:{some js code}" problems
