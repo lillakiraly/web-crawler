@@ -10,10 +10,10 @@ The crawler algorithm uses DFS (depth first search).
 ## Technologies used
 - ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
 - ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
+- ![Apache Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white)
 - jsoup
 - Jackson
 - Lombok
-- ![Apache Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white)
 
 ## Getting Started
 ### Prerequisites
@@ -41,7 +41,9 @@ mvn package
 java -jar webcrawler-0.0.1-SNAPSHOT.jar
 ```
 
-## How to use it
+The project will be hosted on http://localhost:8080/ .
+
+## Usage
 #### Providing the URL(as a crawling start point) and depth (how far should the crawler go)
 Send a GET request, with the following keys:
 - **url**
